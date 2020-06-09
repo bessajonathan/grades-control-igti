@@ -129,11 +129,11 @@ function criarNovaGrade(dados, grade) {
     const novosDados = lerDados();
     return novosDados;
 
-}
+};
 
 function lerDados() {
     const dados = JSON.parse(fs.readFileSync(path.join(__dirname, '/dados', 'grades.json')));
     return dados;
-}
+};
 
 module.exports = rota;
